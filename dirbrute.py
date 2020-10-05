@@ -8,7 +8,24 @@ parcer.add_argument("url", help="complete url of website including http or https
 parcer.add_argument("wordlist", help="path of wordlist")
 parcer.add_argument("output", help="output file name")
 
+G = '\033[92m'  # green
+Y = '\033[93m'  # yellow
+B = '\033[94m'  # blue
+R = '\033[91m'  # red
+W = '\033[0m'  # white
 
+print("""%s
+ _ _
+|    \     _                _ _ _ _     _ _ _     _        _    _ _ _ _ _ _ _ _    _ _ _ _ _
+|  _  \  ( _ )  __ _ _ _   |  _ _  \  /  _   \   |  |     |  | |                | |   _ _ _ |
+| | |  \ |   | |  ' _ _ |  | |_ _| | |  |  \  \  |  |     |  | |_ _ _      _ _ _| |  |
+| | |  / |   | |  |        |_ _ _ _/ |  |_ /  /  |  |     |  |        |   |       |   \_ _ _
+| |_| /  |   | |  |        |  _ _ \  |_ _ _ _/   |  |     |  |        |   |       |    _ _ _|
+|    /   |   | |  |        | |   | | |   _  \    |  |_ _ _|  |        |   |       |   /
+|   /    |   | |  |        | |_ _| / |  | \  \   \           /        |   |       |   |_ _ _
+|__/     |___| |__|        |_ _ _ /  | _|  \ _\   \_ _ _ _ _/         |_ _|       |_ _ _ _ _|%s%s
+            # Coded By AKSHAT SINGHAL - @HONEYAKSHAT999
+""" % (B, W, R))
 args = parcer.parse_args()
 url = args.url
 wordlist = args.wordlist
